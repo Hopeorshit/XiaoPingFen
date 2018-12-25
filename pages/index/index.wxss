@@ -1,0 +1,53 @@
+/* pages/search/search.wxss */
+@import "/templates/loading/loading.wxss";
+
+.add {
+  position: fixed;
+  bottom: 20px;
+  left: 315rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+/* .rooms{
+  padding-bottom: 80rpx;
+} */
+
+.room {
+  height: 200rpx;
+  padding: 20rpx;
+}
+
+.bg {
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  position: absolute;
+  width: 710rpx;
+}
+
+.box-theme {
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+  font-size: 60rpx;
+  color: white;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display:-webkit-box;
+  -webkit-line-clamp: 1;/* 控制多少行后省略 */
+  -webkit-box-orient: vertical;
+  word-break: break-all; /* 追加这一行代码 */
+}
+
+.box-user {
+  margin-top: 20rpx;
+  margin-right: 30rpx;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-size: 36rpx;
+}
+

@@ -1,0 +1,35 @@
+<!--pages/login/login.wxml-->
+<view>
+  <view class='sign-in' wx:if="{{!loginStatus}}">
+    <view>
+      <text class='sign-in-text'>尚未登录</text>
+    </view>
+    <button class='sign-in-button' open-type='getUserInfo' bindgetuserinfo='login'>微信登录 </button>
+  </view>
+  <view wx:else>
+    <view class='picker'>
+      <picker bindchange="bindPickerChange" name="categoryID" value="{{category[index].id}}" range-key='name' range="{{category}}">
+        <view class='box box2'>
+          <text>姓名</text>
+          <view class='box2-right'>
+            <text wx:if="{{!pickerSelected}}" class='select'>选择</text>
+            <text wx:else> {{category[index].name}}</text>
+            <image src='/images/right.png' class='arrow'></image>
+          </view>
+        </view>
+      </picker>
+      <view class='box box2'>
+        <text>学号</text>
+        <view class='box2-right'>
+          <text> {{category[index].id}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='tips'>
+      tips:只有老师能在后台看到姓名和学号
+    </view>
+    <button class='btn-bottom-fixed' disabled='{{publishing}}' bindtap='bindID'>
+      绑定
+    </button>
+  </view>
+</view>

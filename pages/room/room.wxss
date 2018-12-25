@@ -1,0 +1,126 @@
+/* pages/room/room.wxss */
+
+.box4 {
+  padding: 100rpx 20rpx;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.box4-box {
+  padding: 0 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #a9aaac;
+}
+
+.head {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin: 10rpx;
+}
+
+.share-btn {
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  line-height: 0;
+  margin: 0;
+  font-size: 30rpx;
+  color: #a9aaac;
+}
+
+button::after {
+  border: none;
+}
+
+.btn-bottom-fixed {
+  margin-top: 150rpx;
+  position: relative;
+  background-color: #ff6263;
+  color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 0;
+  font-size: 40rpx;
+}
+
+.btn-start {
+  margin-top: 150rpx;
+  position: relative;
+  background-color: #ff6263;
+  color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 0;
+  font-size: 40rpx;
+}
+
+.picker {
+  margin-top: 40rpx;
+  padding: 13px;
+  /* background-color: #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picker input {
+  display: inline-block;
+  /* background-color: #ddd; *//* border-radius: 20rpx; */
+  width: 40rpx;
+  text-align: center;
+  color: #a9aaac;
+  border-bottom: 1rpx solid #ff6263;
+  margin-left: 40rpx;
+}
+
+.judge-box {
+  margin-top: 40rpx;
+}
+
+.judge-head {
+  display: flex;
+  justify-content: center;
+  margin: 20rpx;
+  color: #a9aaac;
+}
+
+.score-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20rpx;
+}
+
+.score-box1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+
+.secret {
+  display: flex;
+  align-items: center;
+}
+
+.secret text {
+  margin-left: 20rpx;
+}
+
+.secret_avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.score {
+  color: #555;
+}
+
+.bg {
+  background-color: white;
+}

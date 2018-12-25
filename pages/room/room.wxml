@@ -1,0 +1,67 @@
+<!--pages/room/room.wxml-->
+<!-- <block wx:for="{{data.header}}"> -->
+<view class='box4'>
+  <block wx:for="{{owners}}" wx:key="{{index}}">
+    <view class='box4-box'>
+      <image class='head' src='{{item.user.avatarUrl}}'></image>
+      <text>{{item.user.name}}</text>
+    </view>
+  </block>
+  <view class='box4-box' wx:if="{{is_owner && room_status==0}}">
+    <button class='share-btn' open-type='share'>
+      <image class='head' src='/images/invite.png'></image>
+    </button>
+    <text>邀请合伙人</text>
+  </view>
+</view>
+
+<button class='btn-bottom-fixed' wx:if="{{!is_owner && is_invite}}" bindtap='signUp'>
+  加入
+</button>
+
+<view wx:if="{{is_owner && room_status==0}}" >
+  <button class='btn-start' bindtap='start'>
+    开始讲演
+  </button>
+  <view class='box4-box'>
+    <text>
+    可通过下拉刷新，查看合伙人是否进入房间
+    </text>
+  </view>
+</view>
+
+
+<view wx:if="{{!is_owner && room_status==1 && !judged}}">
+  <view class='score-box'>
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view class="picker">
+        <text>评分:</text>
+        <input disabled='true' value='{{multiArray[0][multiIndex[0]]}}'></input>
+        <input disabled='true' value='{{multiArray[1][multiIndex[1]]}}'></input>
+        <input disabled='true' value='{{multiArray[2][multiIndex[2]]}}'></input>
+      </view>
+    </picker>
+  </view>
+
+  <button class='btn-start' bindtap='pingFen'>
+    提交
+  </button>
+</view>
+
+<view wx:if="{{room_status==1&&(is_owner||judged)}}" class='judge-box'>
+  <view class='judge-head'>
+    评分列表
+  </view>
+  <block wx:for="{{scores}}" wx:key="{{index}}">
+    <view class="score-box1 {{index%2==0?'bg':''}}">
+      <view class='secret'>
+        <image class='secret_avatar' src='{{item.secret_avatar}}'></image>
+        <text>{{item.secret_name}}</text>
+      </view>
+      <text class='score'>{{item.score}}</text>
+    </view>
+  </block>
+</view>
+
+
+<!-- </block> -->

@@ -1,0 +1,29 @@
+<!--pages/free/free.wxml-->
+<import src="/templates/loading/loading.wxml" />
+<view wx:if="{{!notFirstLoad}}" class='first-load'>
+  <template is="first-load"></template>
+</view>
+
+<view wx:else>
+  <view class='rooms'>
+    <block wx:for="{{rooms}}" wx:key="index" >
+      <view class='room' data-room_id='{{item.id}}' bindtap='room' data-room_name="{{item.name}}">
+        <view class='box'>
+          <view class='box-theme'>
+            {{item.name}}
+          </view>
+          <view class='box-user'>
+            <text>--</text>
+            <block wx:for="{{item.speaker_room}}" wx:for-item="item1" wx:key="index" >
+                <text decode='true'>{{item1.user.name}}&nbsp;</text>
+            </block>
+          </view>
+        </view>
+        <image class='bg' src='{{item.bg}}'></image>
+      </view>
+    </block>
+  </view>
+</view>
+
+
+<image class='add' bindtap='newRoom' src='/images/newroom.jpg'></image>

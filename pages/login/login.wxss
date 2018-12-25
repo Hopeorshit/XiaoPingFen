@@ -1,0 +1,67 @@
+/* pages/login/login.wxss */
+.sign-in
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 240px;
+}
+.sign-in-text
+{
+  color: #aaa;
+  font-size: 46rpx;
+}
+.sign-in-button
+{
+  height: 80rpx;
+  margin-top: 20px;
+  border: 1px solid #353535;
+  font-size: 34rpx;
+  line-height: 80rpx;
+}
+
+/* 绑定 */
+.picker{
+  margin-top: 60rpx;
+}
+
+.box2 {
+  margin-top: 30rpx;
+  padding:  20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.box2-right {
+  display: flex;
+  align-items: center;
+}
+
+.select {
+  color: #a9aaac;
+}
+
+.arrow{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.tips{
+  padding: 20rpx;
+  margin-top: 50rpx;
+  color:#aaa;
+  font-size: 28rpx;
+}
+
+.btn-bottom-fixed {
+  position: fixed;
+  bottom: 80rpx;
+  background-color: #ff6263;
+  color: white;
+  border-radius: 0;
+  left: 5%;
+  right: 5%;
+  font-size: 30rpx;
+}

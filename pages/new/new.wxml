@@ -1,0 +1,10 @@
+<!--pages/new/new.wxml-->
+<view>
+  <form bindsubmit='newRoom'>
+    <view class='theme'>
+      <textarea class='textarea' placeholder='请输入讲课主题' name="name" >
+      </textarea>
+    </view>
+    <button class='btn-bottom-fixed' form-type='submit' disabled='{{creating}}'>创建房间</button>
+  </form>
+</view>

@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/new/new",
+    "pages/room/room"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff6263",
+    "navigationBarTitleText": "课堂小评分",
+    "navigationBarTextStyle": "white"
+  }
+}

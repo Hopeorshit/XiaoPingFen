@@ -1,0 +1,27 @@
+/* pages/new/new.wxss */
+
+.theme {
+  display: flex;
+  justify-content: center;
+  margin-top: 100rpx;
+  padding: 0 50rpx;
+}
+
+.textarea {
+  padding: 20rpx;
+  width: 100%;
+  height: 300rpx;
+  border: 1rpx solid #aaa;
+  border-radius: 20rpx;
+}
+
+.btn-bottom-fixed {
+  margin-top: 150rpx;
+  position: relative;
+  background-color: #ff6263;
+  color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 0;
+  font-size: 30rpx;
+}
