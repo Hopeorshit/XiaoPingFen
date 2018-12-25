@@ -31,7 +31,7 @@
 
 .box-theme {
   padding-top: 30rpx;
-  padding-left: 30rpx;
+  padding-left: 20rpx;
   font-size: 60rpx;
   color: white;
   text-overflow: ellipsis;
@@ -43,11 +43,16 @@
 }
 
 .box-user {
-  margin-top: 20rpx;
-  margin-right: 30rpx;
+  margin: 20rpx;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   color: white;
   font-size: 36rpx;
 }
 
+.duihao{
+  padding: 10rpx;
+  width:50rpx;
+  height: 50rpx;
+}
